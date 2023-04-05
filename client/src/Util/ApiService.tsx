@@ -13,7 +13,6 @@ export const getAllUsers = async () => {
 };
 
 export const getUser = async (email: string | undefined) => {
-  console.log("Email: ", email)
   try {
     const response = await fetch(`${BASE_URL}/getuser/${email}`);
     const user = await response.json();
@@ -24,7 +23,6 @@ export const getUser = async (email: string | undefined) => {
 };
 
 export const createUser = async (newUser: User) => {
-  console.log(newUser);
   try {
     const response = await fetch(`${BASE_URL}/user`, {
       method: "POST",
@@ -127,7 +125,6 @@ export const retrieveQuestion = async ({
   role: string;
   content: string;
 }): Promise<any> => {
-  console.log("Id: ", id);
   return fetch(`${BASE_URL}/chat-response/${id}`, {
     method: "POST",
     body: JSON.stringify({ role, content }),

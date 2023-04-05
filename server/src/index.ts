@@ -21,7 +21,7 @@ const PORT: number = Number(process.env.SERVER_PORT) || 8080;
 
 
     app.listen(PORT, () => {
-      console.log(`Server running at http://localhost:${PORT}`); //eslint-disable-line no-console
+      console.log(`Server running on port ${PORT}`); //eslint-disable-line no-console
     });
   } catch (error) {
     console.error("Unable to connect to the database: ", error); //eslint-disable-line no-console

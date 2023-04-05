@@ -11,9 +11,6 @@ const root = ReactDOM.createRoot(
 );
 const url = process.env.REACT_APP_AUTH0_REDIRECT_URI;
 
-console.log('url', url);
-console.log('server', process.env.REACT_APP_SERVER_URL)
-
 root.render(
   <React.StrictMode>
     <Auth0Provider

@@ -35,7 +35,8 @@ const ContextProvider = ({ children }: { children: React.ReactNode }) => {
   // Checks if user exists in database
   const handleGetUser = async () => {
     if (user) {
-      console.log(user);
+      const allUsers = await ApiService.getAllUsers();
+      console.log(allUsers);
       // setAuthenticated(true);
       const email = user?.email;
       const receivedUser = await ApiService.getUser(email);
