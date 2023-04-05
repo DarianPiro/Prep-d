@@ -14,7 +14,6 @@ export const getAllUsers = async () => {
 
 export const getUser = async (email: string | undefined) => {
   try {
-    console.log('path', `${BASE_URL}/getuser/${email}`)
     const response = await fetch(`${BASE_URL}/getuser/${email}`);
     const user = await response.json();
     return user;
