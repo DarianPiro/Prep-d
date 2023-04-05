@@ -57,3 +57,4 @@ fly.toml
 Dockerfile
 .icloud
 .dockerignore
+/.vscode
