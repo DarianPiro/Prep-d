@@ -27,6 +27,7 @@ pids
 package-lock.json
 node_modules
 
+
 # Optional eslint cache
 .eslintcache
 
@@ -52,3 +53,7 @@ private
 build
 dist
 auth.json
+fly.toml
+Dockerfile
+.icloud
+.dockerignore

@@ -16,10 +16,10 @@ export default function FirstVisit() {
   };
 
   return (
-    <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 text-white'>
+    <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 '>
       <div className='w-5/6	 max-w-md p-10 -space-y-px rounded-md shadow-sm bg-white '>
         <div>
-          <h2 className='text-center text-xl mb-5 font-bold'>
+          <h2 className='text-center text-xl mb-5 font-bold text-gray-900'>
             Please tell us a bit about yourself
           </h2>
         </div>
@@ -33,7 +33,7 @@ export default function FirstVisit() {
             <div className=' '>
               <label
                 htmlFor='first-name'
-                className='block mb-2 text-sm font-bold text-gray-900 dark:text-white'
+                className='block mb-2 mt-2 text-sm font-bold text-gray-900 dark:text-white'
               >
                 First name
               </label>
@@ -49,7 +49,7 @@ export default function FirstVisit() {
             <div>
               <label
                 htmlFor='last-name'
-                className='block mb-2 text-sm font-bold text-gray-900 dark:text-white'
+                className='block mb-2 mt-2 text-sm font-bold text-gray-900 dark:text-white'
               >
                 Last name
               </label>
@@ -65,7 +65,7 @@ export default function FirstVisit() {
             <div>
               <label
                 htmlFor='level'
-                className='block mb-2 text-sm font-bold text-gray-900 dark:text-white'
+                className='block mb-2 mt-2 text-sm font-bold text-gray-900 dark:text-white'
               >
                 Skill level
               </label>

@@ -9,7 +9,7 @@ import populateExerciseCollection from './asset/seedScript';
 import app from "./index-test";
 
 
-const PORT: number = Number(process.env.SERVER_PORT) || 4000;
+const PORT: number = Number(process.env.SERVER_PORT) || 8080;
 (async () => {
   try {
     await dbConnection;
